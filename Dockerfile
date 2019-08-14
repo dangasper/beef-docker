@@ -7,7 +7,8 @@ ENV LANG="C.UTF-8" \
     BEEF_PASSWORD=beef123 \
     BEEF_USER=admin \
     BEEF_HOOK=hook.js \
-    BEEF_HOOK_SESSION_NAME=BEEFHOOK
+    BEEF_HOOK_SESSION_NAME=BEEFHOOK \
+    BEEF_PROXY_IP=
 
 RUN apt-get update && \
 	apt-get -y install $DEPS && \

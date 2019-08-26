@@ -27,6 +27,9 @@ sed -i "/http:/,/database:/{0,/#public:/{s/#public/public/}};{0,/public:/{s/\"\"
 # Turn on websockets
 sed -i "/websocket:/{n;{/enable:/{s/false/true/}}}" config.yaml
 
+# Turn on https
+sed -i "/https:/{n;{/enable:/{s/false/true/}}}" config.yaml
+
 # Change evasion to true
 sed -i "/evasion:/{n;{/enable:/{s/false/true/}}}" config.yaml
 
